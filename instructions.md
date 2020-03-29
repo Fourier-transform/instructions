@@ -13,4 +13,6 @@ git push -u origin master
 
 https://goproxy.cn
 https://goproxy.io
-https://mirrors.aliyun.com/goproxy
+
+netsh wlan show profiles
+netsh wlan show profile WiFi-name key=clear

@@ -1,4 +1,14 @@
 ```
+docker build -t 镜像名 .  # .表示dockerfile在当前目录下
+docker save -o 要保存的文件名  要保存的镜像
+docker save -o centos.tar hub/centos7
+docker load --input 文件
+docker cp /home 96f7f14e99ab:/contaner/
+
+docker login <host>
+```
+
+```
 远程debug
 java -jar -Djava.rmi.server.hostname=192.168.21.135 -Dcom.sun.management.jmxremote.port=8081 -Dcom.sun.management.jmxremote.rmi.port=8081 -Dcom.sun.management.jmxrete.ssl=false -Dcom.sun.managemenjmxremote.authenticate=false  aaa-1.1.0.jar  
 ```
